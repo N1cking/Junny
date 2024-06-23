@@ -1,0 +1,1125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 50%;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.hero-image {
+    position: relative;
+    max-width: 50%;
+}
+
+.glass-effect {
+    ul{text-align: start;}
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 300px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.glass-effect h3 {
+    margin-top: 0;
+}
+
+.search-jobs {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.search-jobs h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.search-jobs form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search-jobs .form-control {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.search-jobs .form-control:focus {
+    border-color: #ff9800;
+    outline: none;
+}
+
+.search-jobs .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-jobs .btn:hover {
+    background-color: #e68a00;
+}
+
+.news-feed {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.news-feed h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h3 {
+    font-size: 20px;
+    margin: 10px;
+    color: #333;
+}
+
+.news-item p {
+    margin: 10px;
+    color: #555;
+}
+
+/* Основные стили для страницы About Us */
+.about-us-page {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-us-page h1, .about-us-page h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.about-us-page p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #ff9800;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.timeline-item.right {
+    justify-content: flex-start;
+    padding-left: 20px;
+    left: 50%;
+}
+
+.timeline-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+    width: 80%;
+}
+
+.timeline-item.left .timeline-content {
+    text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+    text-align: left;
+}
+
+.timeline-icon {
+    font-size: 30px;
+    color: #ff9800;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item.left .timeline-icon {
+    left: auto;
+    right: -40px;
+}
+
+.timeline-item.right .timeline-icon {
+    left: -40px;
+}
+
+.timeline h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.forum-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tags-section,
+.posts-section,
+.create-post-section {
+    margin-bottom: 40px;
+}
+
+.tags-section .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tags-section .tags a {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tags-section .tags a:hover {
+    background-color: #e68900;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+}
+
+.post-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.create-post-section form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-section form label,
+.create-post-section form input,
+.create-post-section form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.create-post-section form button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post-section form button:hover {
+    background-color: #e68900;
+}
+
+.forum-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.forum-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forum-section p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Контактная информация */
+.contact-support {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-support h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #ff9800;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.about-us {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content .icon {
+    font-size: 40px;
+    color: #ff9800;
+    margin-right: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.about-content a {
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-content a:hover {
+    color: #e68a00;
+}
+
+.about-forum .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.about-forum .btn:hover {
+    background-color: #e68a00;
+}
+
+/* Стили страницы форума */
+.forum-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.forum-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tags-section {
+    text-align: center;
+}
+
+.tags-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tags a {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tags a:hover {
+    background-color: #e68a00;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 300px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #ff9800;
+}
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff9800; /* Orange color */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #000000; /* Black color */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/Users/Nick/Desktop/Nick/Junny_vue/my-vue-project/src/assets/images/backgrounds.png'); /* Background image path */
+    background-position: center left;
+    background-size: cover;
+    position: relative; /* Added position relative for absolute positioning */
+}
+
+.signup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup-left h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.signup-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.signup-left img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.signup-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.signup-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff9800; /* Orange color */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #ffa726; /* Lighter shade of orange on hover */
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+.alternative-signup {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alternative-signup p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.alternative-signup a {
+    color: #ff9800; /* Orange color */
+    text-decoration: none;
+}
+
+.social-buttons {
+    margin-top: 10px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b5998; /* Facebook Blue */
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-buttons a.google-btn {
+    background-color: #db4437; /* Google Red */
+}
+
+.social-buttons a:hover {
+    background-color: #4c68d7; /* Darker shade of Facebook Blue */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .signup-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup-right {
+        margin-top: 20px;
+    }
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #000000; /* Black color */
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.search-bar input[type="text"],
+.search-bar select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff9800; /* Orange color */
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ffa726; /* Lighter shade of orange on hover */
+}
+
+.job-listing {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h2 {
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.job-details p {
+    margin: 4px 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+.pagination button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Your existing CSS styles here */
+/* Adjustments for search bar and related elements */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.search-bar input[type="text"],
+.search-bar select,
+.search-bar button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ffa726;
+}
+
+/* Styles for job listings and pagination */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.job-listing {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Ensuring job listings take full width */
+    max-width: 400px; /* Limiting maximum width for job listings */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-details h2 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 18px; /* Adjusting font size for job titles */
+}
+
+.job-details p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 14px; /* Adjusting font size for job details */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+.pagination button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Styles for Login Page */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('/Users/Nick/Desktop/Nick/Junny_vue/my-vue-project/src/assets/images/backgrounds.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-page form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.login-page form input[type="email"],
+.login-page form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-page form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-page form button:hover {
+    background-color: #555;
+}
+
+.login-page .form-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-page .form-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.login-page .form-links a:hover {
+    text-decoration: underline;
+}
+
+.login-page .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.login-page .social-login button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-page .social-login .google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.login-page .social-login .google:hover {
+    background-color: #c33d2f;
+}
+
+.login-page .social-login .facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.login-page .social-login .facebook:hover {
+    background-color: #334d84;
+}
+
+.footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
